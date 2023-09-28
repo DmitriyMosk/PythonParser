@@ -35,21 +35,7 @@ xml_parse_target_on_catalog = '//*[@class="product-item-container"]/div/div[2]/h
 
 xml_item_container = '//*[@class="main_proprs"]'
 xml_parse_targets_item = { # используется, если парсится что-то конкретное, к примеру: есть xpath до конкретного значения, а не поля(фрейма) на котором он находится
-    "IE_DETAIL_PICTURE":'//*[@id="two"]/div/div/img', # xpath до картинки товара (предусмотрена проверка на несоклько img внутри одного контейнера)
-    "IP_PROP138":'', # Изображение в разрезе
-    "IP_PROP145":'//*[@class="mini_props"][1]/span',
-    "IE_BRAND":'//*[@class="mini_props"][2]/span', 
-    "IP_PROP296":'//*[@class="main_proprs"]/table/tr[1]/td[2]/span', # Габарит редуктора по серии
-    "IP_PROP295":'//*[@class="main_proprs"]/table/tr[2]/td[2]/span', # Тип редуктора (одноступенчатый)
-    "IP_PROP274":'//*[@class="main_proprs"]/table/tr[3]/td[2]/span', # Тип установки (L - Фланец )
-    "IP_PROP324":'//*[@class="main_proprs"]/table/tr[4]/td[2]/span', # Передаточное отношение, i (11)
-    # "":'//*[@class="main_proprs"]/table/tr[5]/td[2]/span', # Обороты выходного вала, об/мин ( 126.4 )
-    # "":'//*[@class="main_proprs"]/table/tr[6]/td[2]/span', # Мощность электродвигателя, кВт ( Y0.55 )
-    "IP_PROP305":'//*[@class="main_proprs"]/table/tr[7]/td[2]/span', # Количество полюсов электродвигателя (4P (~1500 об/мин) )
-    "IP_PROP298":'//*[@class="main_proprs"]/table/tr[8]/td[2]/span', # Момент, Нм ( 37 )
-    # "":'//*[@class="main_proprs"]/table/tr[9]/td[2]/span', # Сервис-фактор мотор-редуктора ( 1.80 )
-    
-    "IE_PREVIEW_PICTURE":'',
+    "key":"xpath"
 }
 # Желательно избегать путей, где есть id, ибо id товара внутри каждой КТ может быть разным
 
